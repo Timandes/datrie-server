@@ -1,0 +1,26 @@
+{
+    "name": "timandes/datrie-service",
+    "type": "project",
+    "description": "DA-Trie Service",
+    "keywords": [
+        "double", "array", "trie", "service", "autumn"
+    ],
+    "homepage": "https://github.com/Timandes/datrie-service",
+    "license": "Apache-2.0",
+    "authors": [
+        {"name": "Timandes White", "email": "timandes@php.net"}
+    ],
+    "require": {
+        "php": ">=7.0"
+    },
+    "require-dev": {
+        "doctrine/annotations": "^1.4",
+        "psr/log": "^1.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Timandes\\DaTrieServer\\": "src",
+            "Autumn\\Framework\\": "../autumn-framework/src"
+        }
+    }
+}
