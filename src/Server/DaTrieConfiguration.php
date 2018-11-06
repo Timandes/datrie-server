@@ -39,6 +39,6 @@ class DaTrieConfiguration
         if (!file_exists($path)) {
             throw new \RuntimeException("Cannot find file {$path}");
         }
-        include $path;
+        return include $path;
     }
 }

@@ -10,7 +10,7 @@ namespace Timandes\DaTrieServer\Server\Controller;
 
 use \Autumn\Framework\Annotation\RestController;
 use \Autumn\Framework\Annotation\RequestMapping;
-use \Autumn\Framework\Annotation\Autowired;
+use \Autumn\Framework\Context\Annotation\Autowired;
 
 use \Timandes\DaTrieServer\Proto\Model\Response;
 use \Timandes\DaTrieServer\Core\Service\DaTrieService;

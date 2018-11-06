@@ -8,8 +8,9 @@
 
 namespace Timandes\DaTrieServer\Core\Service\Impl;
 
-use \Autumn\Framework\Annotation\Autowired;
+use \Autumn\Framework\Context\Annotation\Autowired;
 
+use \Timandes\DaTrieServer\Core\Loader\TrieFilterLoader;
 use \Timandes\DaTrieServer\Core\Service\DaTrieService;
 use \Timandes\DaTrieServer\Proto\Model\Location;
 
@@ -25,6 +26,10 @@ class DaTrieServiceImpl implements DaTrieService
 
     public function searchIn(string $message)
     {
+        if (!$message) {
+            return [];
+        }
+        
         if (!$this->trieFilterHandle) {
             $this->trieFilterHandle = $this->trieFilterLoader->load();
         }

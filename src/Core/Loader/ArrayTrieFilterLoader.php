@@ -15,7 +15,7 @@ class ArrayTrieFilterLoader implements TrieFilterLoader
 {
     private $words;
 
-    public function __construct($words)
+    public function __construct(array $words)
     {
         $this->words = $words;
     }
