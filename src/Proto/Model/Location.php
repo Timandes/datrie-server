@@ -8,13 +8,17 @@
 
 namespace Timandes\DaTrieServer\Proto\Model;
 
+use \MintWare\JOM\JsonField;
+
 /**
  * Location Model
  */
 class Location
 {
+    /** @JsonField(name="start", type="int") */
     private $start;
 
+    /** @JsonField(name="end", type="int") */
     private $end;
 
     public function getStart()
