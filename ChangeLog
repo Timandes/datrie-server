@@ -1,0 +1,9 @@
+DA-Trie Server ChangeLog
+
+v0.1.0
+----
+    * Add MySQL datasource
+
+v0.0.1
+----
+    * First version

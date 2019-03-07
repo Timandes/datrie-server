@@ -31,7 +31,7 @@ class DaTrieServiceImpl implements DaTrieService
         }
         
         if (!$this->trieFilterHandle) {
-            $this->trieFilterHandle = $this->trieFilterLoader->load();
+            $this->trieFilterHandle = $this->trieFilterLoader->getHandle();
         }
 
         $result = trie_filter_search_all($this->trieFilterHandle, $message);

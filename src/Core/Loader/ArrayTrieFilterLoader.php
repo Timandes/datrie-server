@@ -14,6 +14,7 @@ namespace Timandes\DaTrieServer\Core\Loader;
 class ArrayTrieFilterLoader implements TrieFilterLoader
 {
     private $words;
+    private $handle;
 
     public function __construct(array $words)
     {
@@ -28,6 +29,11 @@ class ArrayTrieFilterLoader implements TrieFilterLoader
             trie_filter_store($handle, $word);
         }
 
-        return $handle;
+        $this->handle = $handle;
+    }
+
+    public function getHandle()
+    {
+        return $this->handle;
     }
 }

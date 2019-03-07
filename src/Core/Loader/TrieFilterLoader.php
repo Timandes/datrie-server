@@ -15,8 +15,13 @@ interface TrieFilterLoader
 {
     /**
      * Load Trie-Filter handle
+     */
+    public function load();
+
+    /**
+     * Get trie_filter handle
      * 
      * @return resource
      */
-    public function load();
+    public function getHandle();
 }
